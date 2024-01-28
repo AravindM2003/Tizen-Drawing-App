@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  top: 1%;
+  width: 15%;
+  background-color: #0074D9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+.nav-bar{
+    width: auto;
+    height: 50px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background-color: #0074D9;
+    padding: 10px;
+    border-radius: 15px;
+    color: #0b0101;
+}
+span{
+    color: rgba(255, 255, 255, 0.888);
+}
+.clr{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+}
+.clr:hover{
+    transform: scale(1.3);
+    box-shadow: 0px 15px 20px aqua;
+    transform: translateY(-7px);
+  }
+
+.clr:nth-child(1){
+    background-color: #000000b5;
+}
+.clr:nth-child(2){
+    background-color: red;
+}
+.clr:nth-child(3){
+    background-color: orange;
+}
+.clr:nth-child(4){
+    background-color: blue;
+}
+.clr:nth-child(5){
+    background-color: purple;
+}
+.clr:nth-child(6){
+    background-color: yellowgreen;
+}
+.clr:nth-child(7){
+    background-color: yellow;
+}
+.clr:nth-child(8){
+    background-color: #fff;
+}
+button{
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    background-color: rgb(68, 190, 255);
+    color: #fff;
+    border: 3px solid white;
+    font-size: 15px;
+    font-weight: bold; 
+}
+button:hover {
+    background-color:#6CB4EE;
+    box-shadow: 0px 15px 20px aqua;
+    color: #fff;
+    transform: translateY(-7px);
+    transform: scale(1.2);
+  }
+.save{
+    background-color: rgb(68, 190, 255);
+}
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+}
+#ageOutputId{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15pt;
+}
+#ageInputId {
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid white;
+    accent-color: white;
+}
+.colorSelector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
